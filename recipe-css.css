@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+/*
+fonts
+font-family: 'Outfit', sans-serif;
+font-family: 'Young Serif', serif;
+
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(32, 46%, 36%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--eggshell);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-charcoal);
+}
+
+.recipe-container {
+    width: 700px;
+    padding: 30px;
+    background-color: var(--white);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+  
+}
+
+.image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.title {
+    font-family: 'Young Serif', serif;
+    margin: 20px 0 20px 0;
+}
+
+.prep-time-container {
+    background-color: var(--rose-white);
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prep-header {
+    color: hsl(286, 82%, 31%);
+}
+
+ul {
+    margin: 30px ;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.8;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.subheading {
+    color: var(--wenge-brown);
+    font-family: 'Young Serif', serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin: 12px 0 12px 0;
+}
+
+.list-padding {
+    padding-left: 16px;
+}
+
+.divider {
+    border: 1px solid var(--light-grey);
+    margin: 20px 0 20px 0;
+}
+
+ol {
+    margin: 20px 10px 20px 30px;
+}
+
+ol > li::marker {
+    color: var(--wenge-brown);
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom:  1px solid var(--light-grey);
+}
+
+.label {
+    width: 50%;
+    padding: 16px 10px 16px 30px;
+}
+
+.calories {
+    margin-left: -20px;
+    font-weight: bold;
+    color: var(--wenge-brown);
+}
+
+tr:last-of-type {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .recipe-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .recipe-container {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 0;        
+    }
+
+    .image{
+        width: 100%;
+        border-radius: 0;   
+    }
+
+    .mobile-container {
+        padding: 30px;
+    }
+}
